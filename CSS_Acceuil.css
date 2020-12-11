@@ -1,3 +1,72 @@
-﻿body
-{
+﻿html {
+    background: url(C:\Users\Aldous\Desktop\HTML\Projet\Logo.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+body{
+    margin: 0; 
+    padding : 0;
+    font-family: poppins;
+    background: url("Logo.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-posittion: center center;
+    backgroud-repeat: no-repeat;
+    height: 100vh;
+}
+a{
+    font-size: 12 px;
+    text-transform: uppercase;
+
+}
+.navigation_area {
+    background: #262626;
+}
+.navigation_area:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.navigation_area ul{
+    list-style: none;
+    margin: 0;
+}
+.navigation_area > ul > li{
+    float: left;
+    position: relative;
+}
+.navigation_area ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 20px;
+    display: block;
+}
+.navigation_area ul li:hover a{
+    background: #34495a;
+}
+.navigation_area ul ul{
+    position: absolute;
+    padding: 0;
+    min-width: 160px;
+    display: none;
+    top:100%;
+    left: 0;
+}
+.navigation_area ul li:hover > ul {
+    display: block;
+}
+.navigation_area ul ul li:hover a{
+    background: #262626;
+}
+.navigation_area ul ul li{
+    position: relative;
+}
+.navigation_areaul ul ul ul{
+    top: 0;
+    left: 100%;
+}
+.navigation_area ul ul ul li:hover a{
+    background: #34495a;
 }
