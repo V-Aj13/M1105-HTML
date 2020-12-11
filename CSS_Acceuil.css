@@ -60,6 +60,7 @@ a{
     top: 0;
     left: 100%;
 }
+
 .navigation_area ul ul ul li:hover a{
     background: #34495a;
 }
