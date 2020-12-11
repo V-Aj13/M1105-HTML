@@ -1,15 +1,4 @@
-﻿body, html{
-    margin: 0; 
-    padding : 0;
-    font-family: poppins;
-    background: url("Logo.png");
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-posittion: center center;
-    backgroud-repeat: no-repeat;
-    height: 100vh;
-}
-a{
+﻿a{
     font-size: 12 px;
     text-transform: uppercase;
 
