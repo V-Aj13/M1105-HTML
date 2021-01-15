@@ -1,11 +1,11 @@
-﻿* {
+* {
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
-/*Acceuil*/
+
 #banner {
-    background: linear-gradient(rgba(0,0,0,0.5), #0D1E31), url(dino_background4.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5), #0D1E31), url(banner_background_visite_virtuelle.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -118,8 +118,8 @@ nav ul li a{
     }
 }
 
-/*Missions*/
-#mission{
+/*Présentation*/
+#presentation{
     width: 100%;
     padding: 70px 0;
 }
@@ -157,7 +157,7 @@ nav ul li a{
     font-size: 50px;
 }
 
-.missions-box{
+.presentation-box{
     width: 80%;
     margin: auto;
     display: flex;
@@ -166,34 +166,34 @@ nav ul li a{
     text-align: center;
 }
 
-.missions{
+.presentation{
     flex-basis: 50%;
 }
 
-.missions-img{
+.presentation-img{
     flex-basis: 50%;
     margin: auto;
 }
 
-.missions-img img{
+.presentation-img img{
     width: 70%;
     border-radius: 10px;
 }
 
-.missions h1 {
+.presentation h1 {
     text-align: left;
     margin-bottom: 10px;
     font-weight: 100;
     color: #7fa492;
 }
 
-.missions-desc{
+.presentation-desc{
     display: flex;
     align-items: center;
     margin-bottom: 40px;
 }
 
-.missions-icon .fa {
+.presentation-icon .fa {
     width: 50px;
     height: 50px;
     font-size: 30px;
@@ -203,7 +203,7 @@ nav ul li a{
     border: 1px solid #7fa492;
 }
 
-.missions-text p{
+.presentation-text p{
     padding: 0 20px;
     text-align: initial;
 }
@@ -212,23 +212,41 @@ nav ul li a{
     .title-text h1 {
         font-size: 35px;
     }
-    .missions {
+    .presentation {
         flex-basis: 100%;
     }
-    .missions-img {
+    .presentation-img {
         flex-basis: 100%;
     }
-    .missions-img img{
+    .presentation-img img{
         width: 100%;
     }
 }
 
-/*Expositions*/
+/*Galerie D’Anatomie Comparée*/
+
+#anatomiecompare{
+    width: 100%;
+    padding: 70px 0;
+    background: #efefef;
+}
+.video-anatomiecompare {
+	flex-basis: 50%;
+    margin: auto;
+	padding-top: 40px;
+}
+
+@media screen and (max-width: 770px){
+    .testimonial-col{
+        flex-basis: 100%
+    }
+}
+
+/*Galerie de Paléontologie vertébrés*/
 
 #exposition{
     width: 100%;
     padding: 70px 0;
-    background: #efefef;
 }
 
 .exposition-box{
@@ -269,8 +287,7 @@ nav ul li a{
     opacity:1;
 }
 
-.exposition-desc {
-    text-decoration: none;
+.exposition-desc{
     width: 80%;
     position: absolute;
     bottom: 0;
@@ -287,10 +304,6 @@ hr{
     margin: 15px auto;
     width: 60%;
 }
-.exposition-desc h3 a{
-    color: #ffffff;
-    text-decoration: none;
-}
 
 .exposition-desc p{
     font-size: 14px;
@@ -299,6 +312,12 @@ hr{
 .single-exposition:hover .exposition-desc{
     bottom: 40%;
     opacity: 1;
+}
+.paleontologievertebre-box{
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
 }
 
 @media screen and (max-width: 770px){
@@ -317,73 +336,18 @@ hr{
     }
 }
 
-/*testimonials*/
+/*Galerie de Paléontologie invertébrés*/
 
-#testimonial{
+#invertebre{
     width: 100%;
     padding: 70px 0;
-}
-
-.testimonial-row{
-    width: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-.testimonial-col {
-    flex-basis: 28%;
-    padding: 10px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    box-shadow: 0 10px 20px 3px #0D1E31;
-    cursor: pointer;
-    transition: transform .5s
-}
-
-.testimonial-col p {
-    font-size: 14px;
-}
-
-.user{
-    display: flex;
-    align-items: center;
-    margin: 20px 0;
-}
-
-.user img{
-    width: 40px;
-    margin-right: 20px;
-    border-radius: 3px;
-}
-
-.user-info .fa{
-    margin-left: 10px;
-    color: #27c0ff;
-    font-size: 20px;
-}
-
-.user-info small{
-    color: #009688;
-}
-
-.testimonial-col:hover{
-    transform: translateY(-7px);
-}
-
-@media screen and (max-width: 770px){
-    .testimonial-col{
-        flex-basis: 100%
-    }
+    background: #efefef;
 }
 
 /*Footer*/
 
 #footer {
     padding: 100px 0 20px;
-    background: #efefef;
     position: relative;
 }
 
@@ -465,153 +429,3 @@ hr{
     }
 }
 
-
-/*falligng stars*/
-
-.étoile_filante {
-    width: 100%;
-    height: 100%;
-    transform: rotateZ(45deg)
-}
-
-.étoile {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 2px;
-    background: linear-gradient(-45deg, #5f91ff, rgba(0,0,255,0));
-    filter: drop-shadow(0 0 6px #699bff);
-    animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
-}
-
-    .étoile::before,
-    .étoile::after {
-        position: absolute;
-        content: '';
-        top: calc(50% - 1px);
-        right: 0;
-        height: 2px;
-        background: linear-gradient(-45def, rgba(0,0,255,0), #5f91ff, rgba(0,0,255,0));
-        border-radius: 100%;
-        transform: translateX(50%) rotateZ(45deg);
-        animation: shining 3000ms ease-in-out infinite;
-    }
-
-    .étoile::after {
-        transform: translateX(50%) rotateZ(45deg);
-    }
-
-    .étoile:nth-child(1) {
-        top: calc(50% - 200px);
-        left: calc(50% - 300px);
-        animation-delay: 650ms;
-    }
-
-        .étoile:nth-child(1)::before,
-        .étoile:nth-child(1)::after {
-            animation-delay: 650ms;
-        }
-
-    .étoile:nth-child(2) {
-        top: calc(50% - 50px);
-        left: calc(50% - 190px);
-        animation-delay: 150ms;
-    }
-
-        .étoile:nth-child(2)::before,
-        .étoile:nth-child(2)::after {
-            animation-delay: 150ms;
-        }
-
-    .étoile:nth-child(3) {
-        top: calc(50% - 90px);
-        left: calc(50% - 500px);
-        animation-delay: 1600ms;
-    }
-
-        .étoile:nth-child(3)::before,
-        .étoile:nth-child(3)::after {
-            animation-delay: 1600ms;
-        }
-
-    .étoile:nth-child(4) {
-        top: calc(50% - 200px);
-        left: calc(50% - 230px);
-        animation-delay: 4700ms;
-    }
-
-        .étoile:nth-child(4)::before,
-        .étoile:nth-child(4)::after {
-            animation-delay: 4700ms;
-        }
-
-    .étoile:nth-child(5) {
-        top: calc(50% - 490px);
-        left: calc(50% - 50px);
-        animation-delay: 2100ms;
-    }
-
-        .étoile:nth-child(5)::before,
-        .étoile:nth-child(5)::after {
-            animation-delay: 2100ms;
-        }
-
-    .étoile:nth-child(6) {
-        top: calc(50% - -500px);
-        left: calc(50% - 450px);
-        animation-delay: 3500ms;
-    }
-
-        .étoile:nth-child(6)::before,
-        .étoile:nth-child(6)::after {
-            animation-delay: 3500ms;
-        }
-
-    .étoile:nth-child(7) {
-        top: calc(50% - -200px);
-        left: calc(50% - -300px);
-        animation-delay: 3000ms;
-    }
-
-        .étoile:nth-child(7)::before,
-        .étoile:nth-child(7)::after {
-            animation-delay: 3000ms;
-        }
-
-@keyframes tail {
-    0% {
-        width: 0;
-    }
-
-    30% {
-        width: 100px;
-    }
-
-    100% {
-        width: 0;
-    }
-}
-
-@keyframes shining {
-    0% {
-        width: 0;
-    }
-
-    50% {
-        width: 30px;
-    }
-
-    100% {
-        width: 0;
-    }
-}
-
-@keyframes shooting {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(400px)
-    }
-}
