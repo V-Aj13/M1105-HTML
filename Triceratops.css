@@ -5,7 +5,7 @@
 }
 
 #banner {
-    background: linear-gradient(rgba(0,0,0,0.5), #0D1E31), url(banner_background_visite_virtuelle.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5), #0D1E31), url(triceratops.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -303,11 +303,6 @@ hr{
     border: 0;
     margin: 15px auto;
     width: 60%;
-}
-
-.exposition-desc h3 a {
-    color: #ffffff;
-    text-decoration: none;
 }
 
 .exposition-desc p{
